@@ -10,6 +10,7 @@
     <!--  -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/img.css">
 </head>
 
 <body>
@@ -115,8 +116,8 @@
                 <!-- <button class="cv-btn" id="open-popup" onclick="openModal()">Ask Me</button> -->
             </div>
 
-           
-<!-- 
+
+            <!-- 
             <div class="modal-container-form" id="modal-container-form">
                 <div class="modal-content">
                     <h2> Options</h2>
@@ -130,8 +131,47 @@
             <div id="modal-container">
                 <!-- <iframe src="https://wn1dcl4t.nocodb.com/#/nc/form/87b400e3-007a-47b1-bc39-6dfbc9ad58a9"
                     frameborder="0"></iframe> -->
-                    <iframe src="https://wn1dcl4t.nocodb.com/#/nc/form/da85b20f-7334-46eb-bb6b-3759a277565d"
-                    frameborder="0"></iframe>
+                <!-- Booking Form -->
+                <section class="booking-form">
+                    <h2>Service Booking Form</h2>
+                    <form action="process_booking.php" method="post">
+                        <!-- Replace 'process_booking.php' with your actual form handling script -->
+
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regNumber">University Registration Number:</label>
+                            <input type="text" id="regNumber" name "regNumber" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceType">Select Service Type:</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="ppt">PowerPoint Presentation</option>
+                                <option value="resume">Resume Writing</option>
+                            </select>
+                        </div>
+
+                        <!-- Add more fields as needed for additional information -->
+
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
             </div>
         </div>
     </section>
@@ -176,7 +216,7 @@
 
     <!-- gallery starts -->
 
-    <section class="gallery" id="gallery">
+    <!-- <section class="gallery" id="gallery">
         <h2 class="heading">My <span>Gallery</span></h2>
         <div class="port-contaniner">
             <div class="port-box">
@@ -206,7 +246,23 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
+
+
+    <section class="row">
+        <div class="nine columns">
+          <div class="coverflow top10 bot10">
+            <a class="prev-arrow"></a>
+            <a href=""><img src="/img/Gp1.JPG" class="coverflow__image" /></a>
+            <a href=""><img src="/img/Gp2.JPG" class="coverflow__image" /></a>
+            <a href=""><img src="/img/Gp3.jpg" class="coverflow__image" /></a>
+            <a href=""><img src="/img/Gp4.jpg" class="coverflow__image" /></a>
+            <a href=""><img src="/img/Gp5.JPG" class="coverflow__image" /></a>
+            <a href=""><img src="/img/Gp6.JPG" class="coverflow__image" /></a>
+            <a class="next-arrow"></a>
+          </div>
+        </div>
+      </section>
     <!-- ends -->
     <!-- Contact starts -->
     <section class="Contact" id="Contact">
@@ -228,6 +284,7 @@
     <!-- Contact Ends -->
     <script src="js/script.js"></script>
     <script src="js/src.js"></script>
+    <script src="js/img.js"></script>
 </body>
 
 </html>
